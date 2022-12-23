@@ -1,0 +1,371 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+ 	list-style: none;
+    box-sizing: border-box;
+}
+@import url(//db.onlinewebfonts.com/c/15bf847659ab449372f88ed722827dba?family=Stars+Fighters);
+@font-face {
+  font-family: "Stars Fighters";
+  src: url("//db.onlinewebfonts.com/t/15bf847659ab449372f88ed722827dba.eot");
+  src: url("//db.onlinewebfonts.com/t/15bf847659ab449372f88ed722827dba.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/15bf847659ab449372f88ed722827dba.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/15bf847659ab449372f88ed722827dba.woff") format("woff"), url("//db.onlinewebfonts.com/t/15bf847659ab449372f88ed722827dba.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/15bf847659ab449372f88ed722827dba.svg#Stars Fighters") format("svg");
+}
+@import url(//db.onlinewebfonts.com/c/51d11a72b39f33f909abddc723d66f03?family=Kaushan+Script);
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("//db.onlinewebfonts.com/t/51d11a72b39f33f909abddc723d66f03.eot");
+  src: url("//db.onlinewebfonts.com/t/51d11a72b39f33f909abddc723d66f03.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/51d11a72b39f33f909abddc723d66f03.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/51d11a72b39f33f909abddc723d66f03.woff") format("woff"), url("//db.onlinewebfonts.com/t/51d11a72b39f33f909abddc723d66f03.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/51d11a72b39f33f909abddc723d66f03.svg#Kaushan Script") format("svg");
+}
+@import url(//db.onlinewebfonts.com/c/29d7f13cb8d03e4bddff2eecdc7d2ff2?family=Space+Mono);
+@font-face {
+  font-family: "Space Mono";
+  src: url("//db.onlinewebfonts.com/t/29d7f13cb8d03e4bddff2eecdc7d2ff2.eot");
+  src: url("//db.onlinewebfonts.com/t/29d7f13cb8d03e4bddff2eecdc7d2ff2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/29d7f13cb8d03e4bddff2eecdc7d2ff2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/29d7f13cb8d03e4bddff2eecdc7d2ff2.woff") format("woff"), url("//db.onlinewebfonts.com/t/29d7f13cb8d03e4bddff2eecdc7d2ff2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/29d7f13cb8d03e4bddff2eecdc7d2ff2.svg#Space Mono") format("svg");
+}
+@import url(//db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas);
+@font-face {
+  font-family: "Consolas";
+  src: url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.eot");
+  src: url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.woff") format("woff"), url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.svg#Consolas") format("svg");
+}
+body{
+	font-family: 'montserrat';
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg.jpg);
+  background-repeat: repeat ;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+a  img{
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  height: 50px;
+  width: 50px;
+}
+nav{
+  background: transparent;
+  height: 50px;
+  width: 100%;
+}
+label.logo a{
+  color: white;
+  font-family: 'Stars Fighters';
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0 95px;
+  text-shadow: 2px 2px #000;
+}
+nav ul{
+  float: right;
+  margin-right: 1px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+nav ul li a{
+  color: #FFF;
+	font-family: 'Arial';
+	font-weight: bold;
+	width: 150px;
+  height: 25px;
+	padding: 5px 10px;
+	border: 3px solid #fff;
+  border-radius: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+li a:hover{
+  color: blue;
+  border: 3px solid blue;
+  border-radius: 20px;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.intro{
+  position: absolute;
+  left: 60px;
+  top: 200px;
+  width: 600px;
+  height: 600px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: transparent;
+  border: 0px solid #FFF;
+  color: #FFF;
+  font-family: 'tahoma';
+}
+.intro h2{
+  font-size: 65px;
+  font-family: 'Kaushan Script';
+  font-weight: bold;
+}
+.intro p{
+  font-size: 30px;
+  text-align: justify;
+  font-family: 'consolas';
+  line-height: 50px;
+}
+.icons{
+  position: absolute;
+  bottom: 90px;
+  left: 1107px;
+  background-color: linear-gradient(rgba(1,1,1,0.7),rgba(1,1,1,0.7));
+  width: 340px;
+  height: 40px;
+  word-spacing: 10.5px;
+  border: 3px solid #FFF;
+  border-radius: 15px;
+}
+.icons a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 25px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #00ACEE;
+}
+.profile{
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  width: 350px;
+  height: 420px;
+  background-color: transparent;
+  border: 3px solid #FFF;
+  border-radius: 30px;
+}
+.profile img{
+width:330px;
+height:400px;
+border-radius: 30px;
+padding-top: 15px;
+padding-left: 13px;
+}
+.comp{
+  position: absolute;
+  top: 60px;
+  left: 1150px;
+  width: 400px;
+}
+.comp h1{
+  position: absolute;
+  top: 525px;
+  left: 65px;
+  color: #FFF;
+  font-family: 'Kaushan Script';
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.comp h3{
+  position: absolute;
+  top: 570px;
+  left: 10px;
+  color: #FFF;
+  font-family: 'Space Mono';
+  font-size: 13px;
+}
+.footer{
+    background: #000;
+    width:100%;
+    padding:5px 0px;
+    bottom:0;
+    position:fixed;
+    font-size: 18px;
+    color:#FFF;
+    letter-spacing: 3px;
+  }
+  .footer a{
+  text-decoration: underline;
+  }
+@media (max-width: 952px){
+  nav{
+    background: #fff;
+    height: 0px;
+    width: 100%;
+  }
+  a img{
+  	position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 35px;
+    width: 35px;
+  }
+  label.logo a{
+    font-size: 11px;
+    line-height: 58px;
+    padding-left: 65px;
+  }
+  nav ul{
+    background: #FFF;
+    padding-right: 5px;
+  }
+  nav ul li a{
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+.intro{
+  position: absolute;
+  top: 340px;
+  left: 20px;
+  width: 350px;
+  height: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: transparent;
+  border: 0px solid #FFF;
+  color: #FFF;
+  font-family: 'tahoma';
+}
+.intro h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+.intro p{
+  font-size: 15px;
+  font-family: 'Space Mono';
+  text-align: justify;
+  line-height: 25px;
+}
+.icons{
+  position: absolute;
+  top: 230px;
+  left: 25px;
+  background-color: linear-gradient(rgba(1,1,1,0.7),rgba(1,1,1,0.7));
+  width: 300px;
+  height: 32px;
+  word-spacing: 10.5px;
+  border: 3px solid #FFF;
+  border-radius: 15px;
+}
+.icons a{
+    padding-right: 7px;
+    text-decoration: none;
+    color: #fff;   
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 7px;
+    padding-top: 3px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #00ACEE;
+}
+.comp{
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 340px;
+}
+.profile{
+  position: absolute;
+  top: 20px;
+  left: 19%;
+  width: 165px;
+  height: 170px;
+  background-color: transparent;
+  border: 0px solid #FFF;
+  border-radius: 50%;
+}
+.profile img{
+  position: absolute;
+  width:155px;
+  height:160px;
+  border: 0px;
+  border-radius: 50%;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+.comp h1{
+  position: absolute;
+  top: 190px;
+  left: 25px;
+  color: #FFF;
+  font-family: 'Kaushan Script';
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.comp h3{
+  position: absolute;
+  top: 220px;
+  left: -4px;
+  color: #FFF;
+  font-family: 'Space Mono';
+  font-size: 11px;
+}
+.footer{
+    background: #000;
+    width:100%;
+    padding:5px 0px;
+    bottom:0;
+    position:fixed;
+    font-size:12px;
+    color:#FFF;
+    letter-spacing: 0px;
+  }
+  .footer a{
+  text-decoration: underline;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 65px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 15px;
+    cursor: pointer;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
